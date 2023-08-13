@@ -1,14 +1,19 @@
-import Image from "next/image";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Experience from "./components/Experience";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
+import Projects from "./components/Projects";
 
-export default function Home() {
+export default function MainPage() {
   return (
     <main className="main">
-      <section id="introduction" className="section"></section>
-      <section id="about" className="section"></section>
-      <section id="experience" className="section"></section>
-      <section id="projects" className="section"></section>
-      <section id="contact" className="section"></section>
-      <section id="footer" className="section bg-[url('../public/svg/endingwave.svg')] bg-no-repeat bg-bottom"></section>
+      <Home />
+      <About />
+      <Experience />
+      <Projects />
+      <Contact />
+      <Footer />
     </main>
   );
 }

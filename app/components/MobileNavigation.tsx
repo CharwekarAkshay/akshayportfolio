@@ -58,7 +58,7 @@ const MobileNavigation = (props: MobileNavigationProps) => {
                   leaveFrom="translate-x-0"
                   leaveTo="translate-x-full"
                 >
-                  <Dialog.Panel className="pointer-events-auto relative w-screen max-w-md">
+                  <Dialog.Panel className="pointer-events-auto relative w-screen max-w-mds">
                     <div className="flex h-full flex-col overflow-y-scroll bg-gray-100 shadow-xl">
                       <div className="w-100 flex justify-end p-5">
                         <button
