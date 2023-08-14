@@ -1,9 +1,8 @@
-import "./globals.css";
 import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
-import Header from "./components/Header";
+import { Montserrat } from "next/font/google";
+import "./globals.css";
 
-const openSans = Open_Sans({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Portfolio: Akshay Charwekar",
@@ -18,8 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <body className={`${openSans.className} bg-gray-100 text-gray-900`}>
-        <Header />
+      <body className={`${montserrat.className} bg-gray-100 text-gray-900`}>
         {children}
       </body>
     </html>
