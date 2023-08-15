@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="section flex items-center justify-center space-x-10 p-10"
+      className="section flex items-center justify-center space-x-10"
     >
       <div className="flex-1">
         <div className="h-[30rem] w-[45rem] bg-green-500"> </div>

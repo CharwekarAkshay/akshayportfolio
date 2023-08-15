@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .section {
-  @apply min-h-screen w-screen;
+  @apply min-h-screen w-screen p-10;
 }
