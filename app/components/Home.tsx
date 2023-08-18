@@ -24,7 +24,7 @@ const Home = () => {
     <section id="home" className="section flex items-center justify-center">
       <div className="flex flex-1 flex-col items-center justify-evenly space-y-7 md:flex-row">
         <div className="flex flex-col items-start justify-center space-y-2 md:items-center">
-          <div className="flex space-x-2 text-2xl text-blue-500 lg:text-3xl xl:text-4xl">
+          <div className="flex space-x-2 text-2xl text-orange-500 lg:text-3xl xl:text-4xl">
             <div>Hi</div>
             <motion.div
               variants={shakeAnimation}
@@ -34,10 +34,10 @@ const Home = () => {
               👋
             </motion.div>
           </div>
-          <div className="flex flex-row space-x-2 text-2xl text-blue-500 lg:text-3xl xl:text-4xl">
+          <div className="flex flex-row space-x-2 text-2xl text-orange-500 lg:text-3xl xl:text-4xl">
             <p>I am</p> <p className="font-bold">Akshay Charwekar</p>
           </div>
-          <div className="text-md flex flex-row space-x-0 text-slate-500 md:space-x-2 md:text-l justify-betweeng">
+          <div className="text-md md:text-l flex flex-row justify-between space-x-0 text-slate-500 md:space-x-2">
             <p>I am Senior Full Stack Engineer</p>
             <p className="font-bold">@Agoda</p>
           </div>

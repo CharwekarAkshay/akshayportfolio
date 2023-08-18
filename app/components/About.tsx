@@ -9,7 +9,7 @@ const About = () => {
     >
       <div className="section-heading">
         About
-        <div className="h-[2px] w-full flex-1 bg-blue-400 rounded"></div>
+        <div className="h-[2px] w-full flex-1 bg-orange-400 rounded"></div>
       </div>
       <div className="flex flex-col-reverse items-stretch justify-center gap-10 lg:flex lg:flex-row">
         <div className="flex-1">
@@ -17,7 +17,7 @@ const About = () => {
             <Carousel />
           </div>
         </div>
-        <div className="flex flex-col items-start justify-center space-y-3 text-slate-500">
+        <div className="flex flex-col items-start justify-center space-y-3 text-slate-400">
           <p>
             Hello! I&apos;m Akshay, a passionate tech enthusiast who thrives on
             bringing ideas to life on the digital canvas. I embarked on my

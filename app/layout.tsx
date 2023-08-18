@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <body className={`${montserrat.className} bg-gray-100 text-gray-900`}>
+      <body className={`${montserrat.className} bg-slate-900 text-gray-900`}>
         {children}
       </body>
     </html>
