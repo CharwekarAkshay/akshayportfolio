@@ -5,3 +5,7 @@
 .section {
   @apply min-h-screen w-screen p-10;
 }
+
+.section-heading {
+  @apply text-4xl text-blue-500 font-semibold flex flex-row items-center gap-10
+}
