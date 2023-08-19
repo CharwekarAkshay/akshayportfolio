@@ -45,7 +45,7 @@ const Home = () => {
         <div className="relative flex items-center justify-center">
           <div className="absolute -left-[4.813rem] -top-0 -z-10 h-[25rem] w-[25rem] bg-[url('../public/svg/profile_blob.svg')] md:-left-20 md:-top-16 md:h-[28rem] md:w-[28rem] lg:-left-24 lg:-top-20 lg:h-[30rem] lg:w-[30rem] xl:-left-20 xl:-top-16 xl:h-[30rem] xl:w-[30rem]"></div>
           <div className="relative h-[16rem] w-[16rem] bg-[url('../public/images/profile_pic.png')] bg-contain bg-center bg-no-repeat">
-            <div className="absolute bottom-0 left-0 right-0  h-4 bg-gradient-to-b from-transparent via-transparent to-blue-500"></div>
+            <div className="absolute bottom-0 left-0 right-0  h-4 bg-gradient-to-b from-transparent via-transparent to-orange-400"></div>
           </div>
         </div>
       </div>

@@ -97,13 +97,13 @@ export const Carousel = () => {
         className="absolute right-2.5 top-[calc(50%-20px)] z-10 flex h-10 w-10 cursor-pointer select-none items-center justify-center rounded-full bg-white text-xl font-bold opacity-50"
         onClick={() => paginate(1)}
       >
-        <BsChevronRight className="text-blue-500" />
+        <BsChevronRight className="text-orange-400" />
       </div>
       <div
         className="absolute left-2.5 top-[calc(50%-20px)] z-10 flex h-10 w-10 transform cursor-pointer select-none items-center justify-center rounded-full bg-white text-xl font-bold opacity-50"
         onClick={() => paginate(-1)}
       >
-        <BsChevronLeft />
+        <BsChevronLeft className="text-orange-400" />
       </div>
     </>
   );
