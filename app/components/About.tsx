@@ -13,7 +13,7 @@ const About = () => {
       </div>
       <div className="flex flex-col-reverse items-stretch justify-center gap-10 lg:flex lg:flex-row">
         <div className="flex-1">
-          <div className="relative h-[15rem] w-full overflow-clip rounded-xl md:h-[30rem] lg:h-[35rem] lg:w-[55rem]">
+          <div className="relative h-[15rem] w-full md:h-[30rem] lg:h-[35rem] lg:w-[55rem]">
             <Carousel />
           </div>
         </div>

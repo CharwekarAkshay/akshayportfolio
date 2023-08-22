@@ -9,3 +9,6 @@
 .section-heading {
   @apply flex flex-row items-center gap-10 text-4xl font-semibold text-orange-500;
 }
+::selection {
+  @apply bg-slate-700
+}

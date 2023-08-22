@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import Tabs from "./Tabs";
 
 const Experience = () => {
   return (
@@ -9,6 +10,9 @@ const Experience = () => {
       <div className="section-heading">
         Where I&apos;ve worked
         <div className="h-[2px] w-full flex-1 rounded bg-orange-400"></div>
+      </div>
+      <div>
+        <Tabs />
       </div>
     </section>
   );

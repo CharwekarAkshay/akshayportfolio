@@ -90,7 +90,7 @@ export const Carousel = () => {
               paginate(-1);
             }
           }}
-          className="absolute h-full w-full"
+          className="absolute h-full w-full object-contain"
         />
       </AnimatePresence>
       <div
