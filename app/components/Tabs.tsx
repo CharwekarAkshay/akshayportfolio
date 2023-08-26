@@ -38,7 +38,7 @@ const Tabs = () => {
             "Kotlin",
             "C#",
             "Kafka",
-            "And a whole lot more...",
+            "lot more...",
           ],
         },
       ],
@@ -57,12 +57,12 @@ const Tabs = () => {
             "Enhanced user experience by enabling users to fully customize their dashboard, developed with Angular and Java SDUI.",
             "Ensured global website compliance by working on WCAG 2.0 standards.",
           ],
-          technologies: ["Angular", "Angular Material UI", "Java 8", "Spring"],
+          technologies: ["Angular", "Material UI", "Java 8", "Spring"],
         },
       ],
     },
     {
-      company: "Persistent Systems",
+      company: "Persistent",
       website: "https://www.persistent.com/",
       work: [
         {
@@ -121,22 +121,23 @@ const Tabs = () => {
   const [selectedTab, setSelectedTab] = useState(experiences[0]);
 
   return (
-    <div className="flex flex-row items-start justify-evenly">
-      <ul className="flex flex-col items-start space-y-5 p-5">
+    <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-evenly">
+      <ul className="flex flex-row justify-evenly gap-2 lg:flex-col lg:items-center lg:justify-start">
         {experiences.map((experience, index) => (
           <li
             key={experience.company}
             className={cx(
-              "flex cursor-pointer flex-row items-center justify-center gap-2 font-semibold text-orange-500",
+              "md:text-md lg:hover:underline-offset-3 flex cursor-pointer flex-row items-center justify-center gap-2 text-sm font-semibold text-orange-500 transition-all duration-200 lg:hover:underline",
               {
-                "scale-110": selectedTab.company === experience.company,
+                "underline-offset-3 scale-125 underline lg:no-underline":
+                  selectedTab.company === experience.company,
               },
             )}
             onClick={() => setSelectedTab(experience)}
           >
             {experience.company}
             {experience.website && (
-              <a href={experience.website} target="_blank">
+              <a href={experience.website} target="_blank" className="hidden">
                 <LuExternalLink />
               </a>
             )}
@@ -150,12 +151,12 @@ const Tabs = () => {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: -10, opacity: 0 }}
           transition={{ duration: 0.2 }}
-          className="min-h-[80vh] w-[70%] text-slate-500"
+          className="min-h-[50vh] w-[100%] text-slate-500 lg:min-h-[80vh] lg:w-[70%]"
         >
           {selectedTab ? (
             <div className="flex flex-col items-start space-y-5">
               {selectedTab.work.map((work, index) => (
-                <div key={index} className="flex flex-col space-y-4">
+                <div key={index} className="flex flex-col gap-4">
                   <div className="flex flex-row items-center justify-between">
                     <div className="flex flex-col items-start space-y-1">
                       <div className="font-semibold text-orange-500">
@@ -177,7 +178,7 @@ const Tabs = () => {
                     ))}
                   </ul>
                   {work.technologies && (
-                    <div className="flex flex-row items-center justify-start space-x-3">
+                    <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-6">
                       {work.technologies.map((technology, index) => (
                         <div
                           key={index}
