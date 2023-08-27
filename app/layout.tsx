@@ -5,7 +5,7 @@ import "./globals.css";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portfolio: Akshay Charwekar",
+  title: "Akshay Charwekar",
   description:
     "Portfolio of Akshay Charwekar - Senior Fullstack Software Engineer",
 };

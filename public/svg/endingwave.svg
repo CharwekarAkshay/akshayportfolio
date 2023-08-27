@@ -2,8 +2,8 @@
     class="transition duration-300 ease-in-out delay-150">
     <defs>
         <linearGradient id="gradient" x1="6%" y1="26%" x2="94%" y2="74%">
-            <stop offset="5%" stop-color="#60a5fa"></stop>
-            <stop offset="95%" stop-color="#8ED1FC"></stop>
+            <stop offset="5%" stop-color="#C2410C"></stop>
+            <stop offset="95%" stop-color="#f97316"></stop>
         </linearGradient>
     </defs>
     <path

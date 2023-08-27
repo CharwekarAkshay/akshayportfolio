@@ -8,6 +8,7 @@ import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
 const images = [
   { src: "images/about/last_village.jpg" },
+  { src: "images/about/Hackathon.jpg" },
   { src: "images/about/sunrise.jpg" },
   { src: "images/about/bike_ride.jpg" },
   { src: "images/about/by_the_river.jpg" },
@@ -15,7 +16,6 @@ const images = [
   { src: "images/about/frozen_beauty.jpg" },
   { src: "images/about/lake.jpg" },
   { src: "images/about/mountain.jpg" },
-  { src: "images/about/sunset.jpg" },
 ];
 
 const variants = {

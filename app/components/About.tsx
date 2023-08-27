@@ -1,9 +1,38 @@
-import React from "react";
-import { Carousel } from "./Carousel";
 import { BiLogoGithub, BiLogoInstagram, BiLogoLinkedin } from "react-icons/bi";
-import { SiGithub, SiInstagram, SiLeetcode, SiLinkedin } from "react-icons/si";
+import { SiLeetcode } from "react-icons/si";
+import { Carousel } from "./Carousel";
 
 const About = () => {
+  const socialLinks = [
+    {
+      platformName: BiLogoLinkedin,
+      href: "https://www.linkedin.com/in/akshay-charwekar/",
+      logoClass: "cursor-pointer",
+      transitionClass:
+        "transition-all duration-200 hover:scale-150 hover:text-orange-400",
+    },
+    {
+      platformName: BiLogoGithub,
+      href: "https://github.com/CharwekarAkshay",
+      logoClass: "cursor-pointer",
+      transitionClass:
+        "transition-all duration-200 hover:scale-150 hover:text-orange-400",
+    },
+    {
+      platformName: SiLeetcode,
+      href: "https://leetcode.com/AkshayCharwekar/",
+      logoClass: "cursor-pointer",
+      transitionClass:
+        "transition-all duration-200 hover:scale-150 hover:text-orange-400",
+    },
+    {
+      platformName: BiLogoInstagram,
+      href: "https://www.instagram.com/akshaycharwekar/",
+      logoClass: "cursor-pointer",
+      transitionClass:
+        "transition-all duration-200 hover:scale-150 hover:text-orange-400",
+    },
+  ];
   return (
     <section
       id="about"
@@ -45,24 +74,15 @@ const About = () => {
             Follow me on my socials to stay updated with my latest adventures!
           </p>
           <div className="flex flex-row items-center justify-center space-x-4 py-6 text-xl">
-            <a
-              href="https://www.linkedin.com/in/akshay-charwekar/"
-              target="_blank"
-            >
-              <BiLogoLinkedin className="cursor-pointer transition-all duration-200  hover:scale-150 hover:text-orange-400" />
-            </a>
-            <a href="https://github.com/CharwekarAkshay" target="_blank">
-              <BiLogoGithub className="cursor-pointer transition-all duration-200  hover:scale-150 hover:text-orange-400" />
-            </a>
-            <a href="https://leetcode.com/AkshayCharwekar/" target="_blank">
-              <SiLeetcode className="cursor-pointer transition-all duration-200  hover:scale-150 hover:text-orange-400" />
-            </a>
-            <a
-              href="https://www.instagram.com/akshaycharwekar/"
-              target="_blank"
-            >
-              <BiLogoInstagram className="cursor-pointer transition-all duration-200  hover:scale-150 hover:text-orange-400" />
-            </a>
+            {socialLinks.map((socialLink) => {
+              return (
+                <a href={socialLink.href} target="_blank" key={socialLink.href}>
+                  <socialLink.platformName
+                    className={`${socialLink.logoClass} ${socialLink.transitionClass}`}
+                  />
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>
